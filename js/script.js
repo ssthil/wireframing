@@ -35,13 +35,17 @@ var lastId,
 
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
-menuItems.click(function(e){
-  var href = $(this).attr("href"),
-      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-  $('html, body').stop().animate({ 
-      scrollTop: offsetTop
-  }, 500);
-  e.preventDefault();
-});
-
+	menuItems.click(function(e){
+	  var href = $(this).attr("href"),
+		  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	  $('html, body').stop().animate({ 
+		  scrollTop: offsetTop
+	  }, 500);
+	  e.preventDefault();
+	});
+//viewport checker
+	$('.post').addClass('hidden').viewportChecker({
+		classToAdd:'visible animated fadeInDown',
+		offset:500
+	});
 });

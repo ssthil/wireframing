@@ -29,7 +29,7 @@ button{
 
 }
 #header{
-	background: #F0F2F3;
+	background: #38C6CC;
 	height:90px;
 }
 .section-header {
@@ -112,8 +112,11 @@ font-size:1.3em;
 	
 }
 .logo-cont h1{
-	font-family:Glegoo;
-	padding:6px;
+	font-family: Oswald;
+	padding: 6px;
+	font-size: 2.4em;
+	color: #068792;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .nav{
 	float:right;
@@ -127,15 +130,15 @@ font-size:1.3em;
 	margin:0 1.2%;	
 }
 .nav ul.top-navigation li a{
-	border: 1px solid #F7E9D4;
-	background: #fff;
-	padding:8px 16px;
-	display:block;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	font-size:0.9em;
-	color:#333;
+	border: 1px solid #3DB7C2;
+background: #47CFDB;
+padding: 8px 16px;
+display: block;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+font-size: 1.1em;
+color: #1B6568;
 }
 .nav ul.top-navigation li a:hover{
 	background: #FA7670;
