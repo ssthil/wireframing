@@ -1,16 +1,17 @@
 //js
 $(function(){
 	var $backtoTop = $('.back-to-top');	
-	var $header = $('#header');
+	var $header = $('.header-fixed');
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 150){
 			$backtoTop.css("bottom","50px");
-			$header.addClass('header-fixed');
+			$header.addClass('show-header');
 			//$backtoTop.fadeIn();
 		} else{
 			//$backtoTop.fadeOut();
 			$backtoTop.css("bottom","-150px");
-			$header.removeClass('header-fixed');
+			$header.removeClass('show-header');
+			
 		}
 		
 	});

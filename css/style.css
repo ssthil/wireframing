@@ -24,13 +24,36 @@ a{
 button{
 	cursor:pointer;
 }
-.wrapper{
+#wrapper{
 	background:#f5f5f5;
 
+}
+.sticky{
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:999;
+	transition:all 0.7s ease;
+	-moz-transition:all 0.7s ease;
+	-webkit-transition:all 0.7s ease;
 }
 #header{
 	background: #38C6CC;
 	height:90px;
+}
+.header-fixed{
+	position:absolute;
+	z-index:9;
+	background: #A6E9EC !important;
+	top:-120px;
+	overflow: hidden;
+	transition: 0.2s;
+	-moz-transition: 0.2s;
+	-webkit-transition:all 0.7s ease;
+}
+.show-header{
+	top:0;
 }
 .section-header {
 	overflow: hidden;
@@ -83,6 +106,7 @@ background: #3CBAC5;
 .banner-container{
 	height:560px;
 	background:#1C3542;
+	margin-top: 90px;
 }
 .banner-space{
 padding:20px;
@@ -127,22 +151,26 @@ font-size:1.3em;
 .nav ul.top-navigation li{
 	display:inline-block;
 	float:left;
-	margin:0 1.2%;	
+	margin:0 1.1%;	
 }
 .nav ul.top-navigation li a{
 	border: 1px solid #3DB7C2;
-background: #47CFDB;
-padding: 8px 16px;
-display: block;
-border-radius: 3px;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
-font-size: 1.1em;
-color: #1B6568;
+	background: #98E9F0;
+	padding: 8px 14px;
+	display: block;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-size: 0.97em;
+	color: #145E61;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
 }
 .nav ul.top-navigation li a:hover{
 	background: #FA7670;
 	color: #fff;
+	border: 1px solid #C0DCE0;
 }
 .top-nav{
 	float:left;
@@ -151,21 +179,27 @@ color: #1B6568;
 	float:right;
 }
 .btn{
-	padding: 7px 14px;
+	padding: 8px 20px;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	margin:0;
+	font-family: Sanchez;
+	font-size:0.97em;
 }
 .btn-login{
-	background: #31B1D1;
-	border: 1px solid #1FA5BE;
+	background: #106479;
+	border: 1px solid #11515A;
 	color: #fff;
 }
 .btn-login:hover{
-	background: #1FA5BE;
+	background: #1BE9FA;
+	color: #0F737C;
+	border:1px solid #07A3A3;
 
 }
-.header-fixed{	position:fixed;
+
+/*.header-fixed{	position:fixed;
 	height: 60px !important;
 	background: #434F58 !important;
 	transition:all 0.7s ease-in-out;
@@ -188,7 +222,7 @@ background: #FA7670 !important;
 }
 .header-fixed  .logo-cont h1 {
 color: #0BBBDD;
-}
+}*/
 /**** Plan section ****/
 p, h1{
 	text-align:center;
@@ -330,6 +364,14 @@ padding: 80px 15px 15px 15px;
 	float:right;
 	border:1px solid #fb3;
 }
-
+/***** Media queries ****/
+/*** 320 x 480 *******/
+@media (max-width: 320px){
+	.container{width:95%;}
+}
+/**** 480 x 800 ***/
+@media (min-width: 321px) and (max-width: 480px){
+	.container{width:95%;}
+}
 
 
